@@ -1,0 +1,6 @@
+n, x = map(int, input().split())\
+
+a = list(map(int, input().split()))
+for i in range(n):
+    if a[i] < x:
+        print(a[i], end = " ") #출력의 기본 값인 개행(\n)을 없애고 원하는 형태로 하기 위하여 end 사용
