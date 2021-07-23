@@ -1,0 +1,9 @@
+n = int(input())
+new = (n%10)*10 + (((n%10) + (n//10))%10)
+i = 1
+while(1):
+    if (n == new):
+        break
+    new = (new%10)*10 + (((new%10) + (new//10))%10)
+    i = i + 1
+print(i)
