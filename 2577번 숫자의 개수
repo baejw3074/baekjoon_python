@@ -1,0 +1,12 @@
+a = int(input())
+b = int(input())
+c = int(input())
+
+result = str(a * b * c)
+l = list(result)
+count_l = [0 for i in range(10)]
+for i in range(len(l)):
+    number = int(l[i])
+    count_l[number] = count_l[number]+1
+for i in range(10):
+    print(count_l[i])
