@@ -1,0 +1,12 @@
+n = int(input())
+for i in range(n):
+    a = input()
+    count = 0
+    sum = 0
+    for j in range(len(a)):
+        if(a[j] == 'O'):
+            count = count + 1
+        if(a[j] != 'O'):
+            count = 0
+        sum = sum + count
+    print(sum)
